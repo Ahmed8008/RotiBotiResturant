@@ -36,51 +36,47 @@
     <!-- Document Title
     ============================================= -->
     <title>Rotiboti Restaurant</title>
-
-    <style>
-        /* ===== SLIDER TEXT RESPONSIVE FIX ===== */
-
+<style>
+    /* =============================
+   FIX REVOLUTION SLIDER MOBILE
+   ============================= */
 @media (max-width: 768px) {
 
-  /* HEADLINE TEXT */
-  .slide--headline {
-    font-size: 22px !important;
-    line-height: 28px !important;
-    text-align: center !important;
-    padding: 0 15px;
-  }
-
-  /* SUBHEADLINE */
-  .slide--subheadline {
-    font-size: 18px !important;
-    line-height: 24px !important;
-    text-align: center !important;
-    padding: 0 15px;
-  }
-
-  /* BIO TEXT (paragraph) */
-  .slide--bio {
-    font-size: 14px !important;
-    line-height: 22px !important;
-    padding: 0 20px;
-    text-align: center !important;
-  }
-
-  /* FIX CAPTION POSITIONING */
+  /* Force all captions to center align */
   .tp-caption {
     left: 50% !important;
     transform: translateX(-50%) !important;
-    width: 100% !important;
+    text-align: center !important;
+    width: 90% !important;
+    white-space: normal !important;
   }
 
-  /* Reduce vertical offsets */
+  /* Headline */
+  .slide--headline {
+    font-size: 20px !important;
+    line-height: 28px !important;
+  }
+
+  /* Subheadline */
+  .slide--subheadline {
+    font-size: 18px !important;
+    line-height: 24px !important;
+  }
+
+  /* Bio paragraph */
+  .slide--bio {
+    font-size: 14px !important;
+    line-height: 20px !important;
+  }
+
+  /* Remove TP default vertical offsets */
   [data-voffset] {
-    transform: translateY(0) !important;
     top: auto !important;
+    transform: translate(-50%, 0) !important;
   }
 }
 
-    </style>
+</style>
 </head>
 
 <body>
